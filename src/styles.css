@@ -397,14 +397,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .hero-service-node b { transition: opacity .56s var(--ease), transform .56s var(--ease); }
 .hero-service-node i { transition: opacity .62s .18s var(--ease), transform .62s .18s var(--ease); }
 .hero-service-node.is-active i { opacity: 1; transform: translate(-50%, 0); }
-.scene-sweep { height: clamp(6.6rem, 11vw, 10.8rem); background: linear-gradient(104deg, rgba(2, 23, 37, .18), rgba(17, 74, 101, .08) 52%, rgba(72, 174, 211, .1)); box-shadow: inset 0 -1px rgba(122, 229, 255, .12); }
-.scene-sweep > b { inset: 0 -24%; opacity: .9; background-image: linear-gradient(100deg, transparent 0%, rgba(59, 174, 211, .08) 19%, rgba(117, 230, 255, .66) 37%, rgba(25, 151, 197, .62) 47%, rgba(148, 238, 255, .54) 57%, rgba(31, 113, 155, .16) 73%, transparent 91%); background-size: 240% 100%; filter: drop-shadow(0 0 10px rgba(82, 211, 246, .22)); animation-duration: 24s; }
-.scene-sweep > i { width: 136px; height: 136px; border-color: rgba(203, 249, 255, .88); background: radial-gradient(circle, #dffcff 0 2px, rgba(121, 232, 255, .72) 3px 5px, rgba(37, 177, 221, .27) 8%, transparent 61%); box-shadow: 0 0 0 1px rgba(205, 250, 255, .34), 0 0 0 16px rgba(99, 220, 251, .13), 0 0 0 35px rgba(60, 192, 229, .065), 0 0 52px rgba(88, 217, 248, .54); }
+.scene-sweep { height: clamp(4.25rem, 6.35vw, 6.1rem); background: linear-gradient(104deg, rgba(2, 23, 37, .07), rgba(17, 74, 101, .035) 52%, rgba(72, 174, 211, .055)); box-shadow: inset 0 -1px rgba(122, 229, 255, .12); }
+.scene-sweep > b { inset: 0 -16%; opacity: .8; background-image: linear-gradient(100deg, transparent 0%, rgba(59, 174, 211, .04) 19%, rgba(117, 230, 255, .6) 37%, rgba(25, 151, 197, .54) 47%, rgba(148, 238, 255, .44) 57%, rgba(31, 113, 155, .1) 73%, transparent 91%); background-size: 240% 100%; filter: drop-shadow(0 0 8px rgba(82, 211, 246, .2)); animation-duration: 24s; }
+.scene-sweep > i { width: 96px; height: 96px; border-color: rgba(203, 249, 255, .82); background: radial-gradient(circle, #dffcff 0 2px, rgba(121, 232, 255, .68) 3px 5px, rgba(37, 177, 221, .22) 8%, transparent 61%); box-shadow: 0 0 0 1px rgba(205, 250, 255, .3), 0 0 0 12px rgba(99, 220, 251, .1), 0 0 0 25px rgba(60, 192, 229, .05), 0 0 38px rgba(88, 217, 248, .42); }
 .scene-sweep > i::before, .scene-sweep > i::after { position: absolute; inset: 17%; content: ''; border: 1px solid rgba(216, 252, 255, .55); border-radius: inherit; animation: sweep-cursor-orbit 8s linear infinite; }.scene-sweep > i::after { inset: 34%; border-style: dashed; animation-direction: reverse; animation-duration: 5.4s; }
 .scene-sweep.is-pointer-active > b { opacity: .9; filter: drop-shadow(0 0 10px rgba(82, 211, 246, .22)); animation-duration: 24s; }
 .scene-sweep.is-pointer-active > i { transform: translate(-50%, -50%) scale(1.08); }
 @keyframes sweep-cursor-orbit { to { transform: rotate(360deg); } }
-@media (max-width: 650px) { .scene-sweep { height: 6rem; } }
+@media (max-width: 650px) { .scene-sweep { height: 4.1rem; } }
 
 /* Intro chapter: the highlighted promise behaves like a live digital signal, without competing with the editorial layout. */
 .intro-copy { position: relative; isolation: isolate; }
